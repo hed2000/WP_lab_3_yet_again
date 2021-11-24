@@ -1,6 +1,11 @@
 const express = require("express");
 //creating app
 const app = express();
+
+//pass requests to the router middleware
+const router = require("./routes/apis");
+app.use(router);
+
 //handling static HTML and EJS templates
 app.use(express.static("public"));
 
