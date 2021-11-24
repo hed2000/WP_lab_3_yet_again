@@ -21,7 +21,6 @@
     <input type="number" id="phone" name="phone" required><br>
     <label for="fax">Fax*</label><br>
     <input type="number" id="fax" name="fax" required><br>
-    <label>(Confirmation?)</label><br>
     <label for="payment">Payment*</label><br>
     <select id="payment" name="payment" required>
       <option value="cheque">Cheque + reception</option>
@@ -32,8 +31,9 @@
     <label for="informations">Extra Information</label><br>
     <textarea id="informations" name="informations" rows="3" cols="40"></textarea><br>
     <label for="max_outstanding">Max Outstanding*</label><br>
-<input type="number" id="max_outstanding" name="max_outstanding" step="50000" min="0" required><br>
-    <br>
+    <input type="number" id="max_outstanding" name="max_outstanding" step="50000" min="0" required><br><br>
+    <input type="submit" value="Register">     
+    <br><br>
  </form>
  </div>
 <%- include('footer'); -%>
