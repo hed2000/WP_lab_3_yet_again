@@ -1,5 +1,39 @@
 <%- include('header'); -%>
  <div class="content">
  <h1 id="title">Register</h1>
+ <form action="/api/register" method="post">
+  <label>* = Required</label><br><br>
+    <label for="login">Username*</label><br>
+    <input type="text" id="login" name="login" required><br>
+    <label for="password">Password*</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <label for="society">Society*</label><br>
+    <input type="text" id="society" name="society" required><br>
+    <label for="contact">Name (Contact)*</label><br>
+    <input type="text" id="contact" name="contact" required><br>
+    <label for="addres">Address*</label><br>
+    <input type="text" id="addres" name="addres" required><br>
+    <label for="zipcode">Zip Code*</label><br>
+    <input type="number" id="zipcode" name="zipcode" required><br>
+    <label for="city">City*</label><br>
+    <input type="text" id="city" name="city" required><br>
+    <label for="phone">Phone Number*</label><br>
+    <input type="number" id="phone" name="phone" required><br>
+    <label for="fax">Fax*</label><br>
+    <input type="number" id="fax" name="fax" required><br>
+    <label>(Confirmation?)</label><br>
+    <label for="payment">Payment*</label><br>
+    <select id="payment" name="payment" required>
+      <option value="cheque">Cheque + reception</option>
+      <option value="30d">Draft + 30 days</option>
+      <option value="60d">Draft + 60 days</option>
+      <option value="90d">Draft + 90 days</option>
+    </select><br>
+    <label for="informations">Extra Information</label><br>
+    <textarea id="informations" name="informations" rows="3" cols="40"></textarea><br>
+    <label for="max_outstanding">Max Outstanding*</label><br>
+<input type="number" id="max_outstanding" name="max_outstanding" step="50000" min="0" required><br>
+    <br>
+ </form>
  </div>
 <%- include('footer'); -%>
