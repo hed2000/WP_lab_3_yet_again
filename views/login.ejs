@@ -1,12 +1,13 @@
 <%- include('header'); -%>
  <div class="content">
  <h1 id="title">Log in</h1>
- <p>*GET method yet to be implemented</p>
- <form>
+
+ <form action = "/api/login" method="get">
     <label for="login">Username</label><br>
-    <input type="text" id="login" name="login"><br>
+    <input type="text" id="login" name="login" required><br>
     <label for="password">Password</label><br>
-    <input type="password" id="password" name="password">
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="submit" value="Login"> 
   </form>
  </div>
  <div class="content">
