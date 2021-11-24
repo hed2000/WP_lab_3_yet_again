@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 //handling static HTML and EJS templates
 app.use(express.static("public"));
+
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.render("index"); //no need for ejs extension
